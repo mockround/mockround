@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MockRound : We mock for better</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Mock Interviews, Job Interviews...." />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<style>
+.btn {border:3px solid; -webkit-border-radius: 1px; -moz-border-radius: 3px; border-radius: 3px; border-color:white;}
+
+/*******************************/
+/*           Login Modal       */
+/*******************************/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn-loginmodal {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 8%;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #373737;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 3px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.panel-title a {display: block; padding: 10px 15px; margin: -10px -15px;}
+</style>
+
+</head>
+<body>
+<!--header-top start here-->
+<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-8 header-address">
+				<ul>
+					<li><span class="phone"> </span> <h6>080-2222222</h6></li>
+					<li><span class="email"> </span><h6><a href="mailto:contactus@mockround.com">contactus@mockround.com</a></h6></li>
+
+				</ul>
+			</div>
+			<div class="col-md-4 top-social">
+			    <ul>
+			    	<li><a href="#"><span class="fb"> </span></a></li>
+			    	<li><a href="#"><span class="tw"> </span></a></li>
+			    	<li><a href="#"><span class="in"> </span></a></li>
+			    	<li><a href="#"><span class="gmail"> </span></a></li>
+			    </ul>
+			</div>
+			
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header-top end here-->
+<!--header start here-->
+<!-- ======================	NAVBAR	======================= -->
+<div class="header w3l">
+	<div class="fixed-header">	
+
+		    <div class="navbar-wrapper">
+		      <div class="container">
+		        <nav class="navbar navbar-inverse navbar-static-top">
+		             <div class="navbar-header">
+			              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			              </button>
+			              <div class="logo">
+			                   <h5><a class="navbar-brand" href="index.html">mockround</a></h5>
+			              </div>
+			          </div>
+		            <div id="navbar" class="navbar-collapse collapse">
+		            <nav class="cl-effect-16" id="cl-effect-16">
+		              <ul class="nav navbar-nav">
+		               <li><a  href="index.html" data-hover="MOCKROUND">MOCKROUND</a></li>
+		                <li><a href="index.html#why_mockround"  data-hover="WHY MOCKROUND ?">WHY MOCKROUND ?</a></li>
+						<li><a href="experts.html" data-hover="EXPERTS">EXPERTS</a></li>
+						<li><a class="active" href="freeResources.html" data-hover="FREE RESOURCES">FREE RESOURCES</a></li>
+						<li><a href="training.html" data-hover="TRAINING">TRAINING</a></li>
+						<li><button class="btn" onclick="document.getElementById('signin_modal').style.display='block'" style="width:auto;" href="#" id="log-in-button">LOGIN</button></li>
+						<li><button class="btn" onclick="document.getElementById('signup_modal').style.display='block'" style="width:auto;" href="#0" id="sign-up-button">SIGNUP</button></li>
+						
+		              </ul>
+		            </nav>
+
+		    		</div>
+		            <div class="clearfix"> </div>
+		             </nav>
+		          </div>
+		           <div class="clearfix"> </div>
+		    </div>
+	 </div>
+</div>
+
+<!--header end here-->
+
+<!--Hoverable starts here-->
+
+<div class="bs-example container">
+    <div class="panel-group" id="accordion">
+	<!--Panel 1-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1.Networking</a></h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+			<a href="#"class="btn">Security</a><a href="#"class="btn">Cloud Collaboration Technologies</a><a href="#"class="btn">Validation</a>
+			<a href="#"class="btn">Architecture</a><a href="#"class="btn">LAN Switching</a><a href="#"class="btn">Scripting</a>
+			<a href="#"class="btn">Security</a><a href="#"class="btn">Cloud Collaboration Technologies</a><a href="#"class="btn">Validation</a>
+			<a href="#"class="btn">Architecture</a><a href="#"class="btn">LAN Switching</a><a href="#"class="btn">Scripting</a>
+                </div>
+            </div>
+        </div>
+	<!--Panel 2-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2.Web Development</a></h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                       	<a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+	<!--Panel 3-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3.Semiconductor</a></h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+			<a href="#"class="btn">RTL Design</a><a href="#"class="btn">Analog Design</a><a href="#"class="btn">Physical design</a>
+			<a href="#"class="btn">Functional verification</a><a href="#"class="btn">DFT</a><a href="#"class="btn">Formality</a>
+			<a href="#"class="btn">DDR Design/Implementation</a><a href="#"class="btn">Analog Layout</a><a href="#"class="btn">Standard cell</a>
+			<a href="#"class="btn">STA</a><a href="#"class="btn">Physical verification</a><a href="#"class="btn">Full Chip</a>
+			<a href="#"class="btn">Architecture</a><a href="#"class="btn">Characterization</a><a href="#"class="btn">Physical design</a>
+			<a href="#"class="btn">RTL Design</a><a href="#"class="btn">Analog Design</a><a href="#"class="btn">Physical design</a>
+		</div>
+            </div>
+        </div>
+	<!--Panel 4-->
+	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4.Place holder</a></h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                       	<a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+	<!--Panel 5-->
+	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5">5.Place holder</a></h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+                <div class="panel-body">
+                       	<a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+	<!--Panel 6-->
+	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6">6.Place holder</a></h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+                <div class="panel-body">
+                       	<a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+	<!--Panel 7-->
+	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse7">7.Place holder</a></h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+                <div class="panel-body">
+                       	<a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<p><strong>Note:</strong> Click on the linked heading text to expand or collapse panels.</p>
+</div>
+
+<!--Hoverable ends here-->
+
+<!--copy rights start here-->
+<div class="copy-rights">
+	<div class="container">
+		<div class="copy-rights-main">
+			<ul class="ftr-icons">
+				<li><a class="fa" href="#"> </a></li>
+				<li><a class="tw" href="#"> </a></li>
+				<li><a class="g" href="#"> </a></li>
+			</ul>
+			 <p>© 2016 MockRound. All Rights Reserved | Design by  <a href="http://www.signoffsemi.com/" target="_blank">SignOff</a> </p>
+
+		</div>
+	</div>
+</div>
+<!--copy rights end here-->
+</body>
+</html>
+

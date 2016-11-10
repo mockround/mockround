@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MockRound : We mock for better</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Mock Interviews, Job Interviews...." />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<style>
+.btn {border:3px solid; -webkit-border-radius: 1px; -moz-border-radius: 3px; border-radius: 3px; border-color:white;}
+
+/*******************************/
+/*           Login Modal       */
+/*******************************/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn-loginmodal {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 8%;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+<!--header-top start here-->
+<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-8 header-address">
+				<ul>
+					<li><span class="phone"> </span> <h6>080-2222222</h6></li>
+					<li><span class="email"> </span><h6><a href="mailto:contactus@mockround.com">contactus@mockround.com</a></h6></li>
+
+				</ul>
+			</div>
+			<div class="col-md-4 top-social">
+			    <ul>
+			    	<li><a href="#"><span class="fb"> </span></a></li>
+			    	<li><a href="#"><span class="tw"> </span></a></li>
+			    	<li><a href="#"><span class="in"> </span></a></li>
+			    	<li><a href="#"><span class="gmail"> </span></a></li>
+			    </ul>
+			</div>
+			
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header-top end here-->
+<!--header start here-->
+<!-- ======================	NAVBAR	======================= -->
+<div class="header w3l">
+	<div class="fixed-header">	
+
+		    <div class="navbar-wrapper">
+		      <div class="container">
+		        <nav class="navbar navbar-inverse navbar-static-top">
+		             <div class="navbar-header">
+			              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			              </button>
+			              <div class="logo">
+			                   <h5><a class="navbar-brand" href="index.html">mockround</a></h5>
+			              </div>
+			          </div>
+		            <div id="navbar" class="navbar-collapse collapse">
+		            <nav class="cl-effect-16" id="cl-effect-16">
+		              <ul class="nav navbar-nav">
+		               <li><a class="active" href="index.html" data-hover="MOCKROUND">MOCKROUND</a></li>
+		                <li><a href="#why_mockround"  data-hover="WHY MOCKROUND ?">WHY MOCKROUND ?</a></li>
+						<li><a href="experts.html" data-hover="EXPERTS">EXPERTS</a></li>
+						<li><a href="freeResources.html" data-hover="FREE RESOURCES">FREE RESOURCES</a></li>
+						<li><a href="training.html" data-hover="TRAINING">TRAINING</a></li>
+						<li><button class="btn" onclick="document.getElementById('signin_modal').style.display='block'" style="width:auto;" href="#0" id="log-in-button">LOGIN</button></li>
+						<li><button class="btn" onclick="document.getElementById('signup_modal').style.display='block'" style="width:auto;" href="#0" id="sign-up-button">SIGNUP</button></li>
+						
+		              </ul>
+		            </nav>
+
+		    		</div>
+		            <div class="clearfix"> </div>
+		             </nav>
+		          </div>
+		           <div class="clearfix"> </div>
+		    </div>
+	 </div>
+</div>
+
+<!--header end here-->
+<!--banner  start hwew-->
+<div class="banner">
+	<div class="container">
+		<div class="banner-main">
+			<h4>We mock for better</h4>
+			<h2>MockRound</h2>		
+			<span class="ban-line"> </span>	
+			<p></p>
+			<a href="contact.html">HOW IT WORKS?</a>
+		    <a href="experts.html">BOOK A SLOT</a>
+		    
+		</div>
+    </div>
+</div>
+<!--BANNER END HERE-->
+
+<!--Sign in/up modals-->
+
+<div id="signin_modal" class="modal modal-dialog modal-sm">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('signin_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/login_avatar.png" alt="Avatar" class="avatar">
+      <p>LOGIN</p>
+    </div>
+
+    <div class="container-fluid">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="btn-loginmodal">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('signin_modal').style.display='none'" class="cancelbtn btn-loginmodal">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="signup_modal" class="modal modal-dialog modal-sm">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('signup_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/login_avatar.png" alt="Avatar" class="avatar">
+      <p>SIGNUP</p>
+    </div>
+
+    <div class="container-fluid">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Email-ID</b></label>
+      <input type="password" placeholder="Enter e-mail ID" name="psw" required>
+
+      <label><b>Mobile number</b></label>
+      <input type="text" placeholder="Enter mobile number" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Re-enter the Password</b></label>
+      <input type="password" placeholder="Re-enter the Password" name="psw" required>
+      <button type="submit" class="btn-loginmodal">SignUp</button>
+    </div>
+
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('signup_modal').style.display='none'" class="cancelbtn btn-loginmodal">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('signup_modal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+<!--End of Sign in/up modals-->
+<!------------------------------------------------------------------------------------>
+
+<!--welcome strat here-->
+<div class="welcome">
+	<div class="container">
+		<div class="welcome-main">
+			 <div class="welcome-top">
+			 	<h3>Welcome</h3>
+			 	<p>Find out what you like doing best, and get someone to pay you for it.</p>
+				<iframe src="https://appear.in/your-room-name" width=700" height="600" frameborder="0"></iframe>
+			 </div>
+			 <div class="welcome-bottom">
+			 	<div class="col-md-3 welcome-w3agile wel-1">
+			 		<i class="wel-num"><img src="images/1.png" alt=""> </i>
+			 	   <span class="wel-icon1"> </span>
+			 		<h3>Thought</h3>			 		
+			 		<p></p>
+			 	</div>
+			 	<div class="col-md-3 welcome-w3agile wel-2">
+			 		<i class="wel-num"><img src="images/2.png" alt=""> </i>
+			 		 <span class="wel-icon2"> </span>
+			 		<h3>Planning</h3>
+			 		<p></p>
+			 	</div>
+			 	<div class="col-md-3 welcome-w3agile wel-3">
+			 		<i class="wel-num"><img src="images/3.png" alt=""> </i>
+			 		 <span class="wel-icon3"> </span>
+			 		<h3>Implement</h3>
+			 		<p></p>
+			 	</div>
+			 	<div class="col-md-3 welcome-w3agile wel-4">
+			 		<i class="wel-num"><img src="images/4.png" alt=""> </i>
+			 		 <span class="wel-icon4"> </span>
+			 		<h3>Result</h3>
+			 		<p></p>
+			 	</div>
+			 	<div class="clearfix"> </div>
+			 </div>		
+		</div>
+	</div>
+</div>
+<!--welcome end here->
+<!----people start here-->
+<div class="people">
+	<div class="container">
+		<div class="people-main">
+			<h3>Successful People Dont Fear Failure</h3>
+			<p>The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle</p>
+		</div>
+	</div>
+</div>
+<!--people end here-->	
+<!--why we choose start here-->
+<div class="news">
+	<div class="container">
+		<div class="news-main">
+			<div class="col-md-6 news-left">
+				<h3>Latest News</h3>
+				<div class="col-md-6 new-pic1">
+				    <img src="images/pic1.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-md-6 new-pic1">
+				    <img src="images/pic2.jpg" alt="" class="img-responsive">
+				</div>
+			   <div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 we-choose-rit" id="why_mockround">
+				<h3>Why MockRound</h3>
+			           <div class="menu_vertical">
+				         	 	<section class="accordation_menu">
+								  <div>
+								    <input id="label-1" name="lida" type="radio" checked/>
+								   <label for="label-1" id="item1"><i class="ferme"> </i><span class="m_5">PREPARE</span><i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+								    <div class="content1" id="a1">
+				  			   	 <p> Mock interviews enable candidates to have a fair idea about the sort of things they are going to experience at actual interviews, and prepare them how accurately they can deal with it  </p>
+								    </div>
+								  </div>
+								  <div>
+								    <input id="label-2" name="lida" type="radio"/>
+								    <label for="label-2" id="item2"><i class="icon-leaf" id="i2"></i><span class="m_5">CONQUER FEAR</span><i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+								    <div class="content1" id="a2">
+					  			   <p>Mock interviews help candidates reduce their anxiety about interviewing by training them for the typical interview questions. The person conducting the mock interview is an experienced interviewer and a skilled trainer, who can guide candidates whether or not their responses are suitable, along with providing them the most appropriate set of response they should practice</p>     
+								    </div>
+								  </div>
+								  <div>
+								    <input id="label-3" name="lida" type="radio"/>
+								    <label for="label-3" id="item3"><i class="icon-trophy" id="i3"></i><span class="m_5">KNOW YOUR STRENGTHS & WEAKNESSES</span><i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+								    <div class="content1" id="a3">
+						  		<p>In the process the candidates gain their confidence by having the knowledge about their strengths and shortcomings. No one is perfect enough to execute everything faultlessly, so the purpose of these mock interviews is to point out one's weaknesses and guide them to bring perfection by rectifying those</p>
+								    </div>
+								  </div>
+								   <div>
+								    <input id="label-4" name="lida" type="radio"/>
+								    <label for="label-4" id="item4"><i class="icon-trophy" id="i4"></i><span class="m_5">PLACE HOLDER</span><i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+								    <div class="content1" id="a4">
+						  			   	 	<p>PLACE HOLDER</p>
+								    </div>
+								  </div>
+								 </section>
+                      </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--why we choose end here-->
+<!--corporate start here-->
+<div class="corporate">
+	<div class="container">
+		<div class="corporate-main">
+			<div class="col-md-8 corporate-left">			
+					<div class="skills-top">
+					    <h4>Our Skills</h4>
+					    <p>But I must explain to you how all this mistaken idea of denouncing</p>
+					</div>
+					<div class='bar_group'>
+						<div class='bar_group__bar thin' label='Rating' show_values='true' tooltip='true' value='343'></div>
+						<div class='bar_group__bar thin' label='Quality' show_values='true' tooltip='true' value='235'></div>
+						<div class='bar_group__bar thin' label='Amount' show_values='true' tooltip='true' value='550'></div>
+						<div class='bar_group__bar thin' label='Quandary' show_values='true' tooltip='true' value='456'></div>
+		           </div>
+                     <script src="js/bars.js"></script>				
+			</div>
+			<div class="col-md-4 corporate-right">
+				<img src="images/fig.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--corporate end here-->
+<!--news lettter start here-->
+<div class="newsletter">
+	<div class="container">
+		<div class="newsletter-wthree">
+			<h3>Sign up For Newsletter</h3>
+			<p>We will spam your inbox!!!!!!!!!</p>
+			<form action="#" method="post">
+				<input type="text" placeholder="Your Mail" name="Your Mail" required="">
+				<input type="submit"  value="Sign Up">
+			</form>
+		</div>
+	</div>
+</div>
+<!--news letter end here-->
+<!--copy rights start here-->
+<div class="copy-rights">
+	<div class="container">
+		<div class="copy-rights-main">
+			<ul class="ftr-icons">
+				<li><a class="fa" href="#"> </a></li>
+				<li><a class="tw" href="#"> </a></li>
+				<li><a class="g" href="#"> </a></li>
+			</ul>
+			 <p>© 2016 MockRound. All Rights Reserved | Design by  <a href="http://www.signoffsemi.com/" target="_blank">SignOff</a> </p>
+
+		</div>
+	</div>
+</div>
+<!--copy rights end here-->
+</body>
+</html>
+
+      	 

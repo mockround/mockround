@@ -1,0 +1,33 @@
+
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">?</button>
+			        <h3>About Joe</h3>
+			    </div>
+			        <div class="modal-body" style="text-align:center;">
+			        <div class="row-fluid">
+			            <div class="span10 offset1">
+			                <div id="modalTab">
+			                    <div class="tab-content">
+			                        <div class="tab-pane active" id="about">
+    <img src="images/ic10.png" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+      <h3 class="media-heading">Joe Sixpack <small> USA</small></h3>
+                <span><strong>Skills: </strong></span>
+                <span class="label label-warning">HTML5/CSS</span>
+                <span class="label label-info">Adobe CS 5.5</span>
+                <span class="label label-info">Microsoft Office</span>
+                <span class="label label-success">Windows XP, Vista, 7</span>
+    </center>
+    <hr>
+    <center>
+    <p class="text-left"><strong>Bio: </strong><br>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+      <br>
+      </center>
+      </div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
